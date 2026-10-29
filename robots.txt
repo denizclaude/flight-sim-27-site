@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://denizclaude.github.io/flight-sim-27-site/sitemap.xml
