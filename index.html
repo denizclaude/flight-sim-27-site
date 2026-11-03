@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-lang="tr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,53 +10,119 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Flight Sim 27 — Uçuş Simülatörü">
 <meta property="og:description" content="Gökyüzü senin. Dünya seni bekliyor. Gerçek dünyanın üzerinde uç: 26 uçak ve helikopter, gerçek havalimanları.">
-<meta property="og:image" content="https://denizclaude.github.io/flight-sim-27-site/icon.png">
+<meta property="og:image" content="https://denizclaude.github.io/flight-sim-27-site/img/bosphorus.jpg">
 <meta property="og:url" content="https://denizclaude.github.io/flight-sim-27-site/">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"VideoGame","name":"Flight Sim 27","alternateName":"FlightSim27","genre":"Flight simulator","gamePlatform":["iOS","iPadOS","Android","macOS"],"applicationCategory":"GameApplication","operatingSystem":"iOS, Android","author":{"@type":"Organization","name":"FS27 Studio"},"publisher":{"@type":"Organization","name":"FS27 Studio"},"image":"https://denizclaude.github.io/flight-sim-27-site/icon.png","url":"https://denizclaude.github.io/flight-sim-27-site/","description":"Gerçek dünyanın üzerinde uçtuğun uçuş simülatörü: 26 uçak ve helikopter, gerçek havalimanları, kariyer ve görevler.","inLanguage":["tr","en","de","es","fr"]}
+{"@context":"https://schema.org","@type":"VideoGame","name":"Flight Sim 27","alternateName":"FlightSim27","genre":"Flight simulator","gamePlatform":["iOS","iPadOS","Android","macOS"],"applicationCategory":"GameApplication","operatingSystem":"iOS, Android","author":{"@type":"Organization","name":"FS27 Studio"},"publisher":{"@type":"Organization","name":"FS27 Studio"},"image":"https://denizclaude.github.io/flight-sim-27-site/img/bosphorus.jpg","screenshot":["https://denizclaude.github.io/flight-sim-27-site/img/bosphorus.jpg","https://denizclaude.github.io/flight-sim-27-site/img/balloons.jpg","https://denizclaude.github.io/flight-sim-27-site/img/cockpit.jpg"],"url":"https://denizclaude.github.io/flight-sim-27-site/","description":"Gerçek dünyanın üzerinde uçtuğun uçuş simülatörü: 26 uçak ve helikopter, gerçek havalimanları, kariyer ve görevler.","inLanguage":["tr","en","de","es","fr"]}
+</script>
+<script>
+  (function () {
+    var l = "tr";
+    try { l = localStorage.getItem("fs27lang") || ""; } catch (e) { l = ""; }
+    if (!l) l = (navigator.language || "tr").toLowerCase().indexOf("tr") === 0 ? "tr" : "en";
+    document.documentElement.setAttribute("data-lang", l);
+    document.documentElement.lang = l;
+  })();
 </script>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<main>
-<header><img src="icon.png" alt=""><h1>FLIGHT SIM <span>27</span></h1></header>
-<p class="dim">Gökyüzü senin. Dünya seni bekliyor. · The sky is yours. The world is waiting.</p>
-<nav><a href="index.html">Destek / Support</a><a href="privacy.html">Gizlilik / Privacy</a></nav>
+<body class="home">
 
-<section class="card">
-<h2>Flight Sim 27 nedir?</h2>
-<p>Flight Sim 27, gerçek dünyanın üzerinde uçtuğun bir uçuş simülatörü. Uydu görüntüsü ve gerçek arazi üzerinde İstanbul'dan, Boğaz'dan, Kapadokya'dan ya da dünyanın istediğin yerinden kalk.</p>
-<ul>
-<li>Cessna'dan Boeing 747'ye, F-16'dan helikopterlere 26 uçak ve helikopter</li>
-<li>Gerçek havalimanları ve pistler, kalkış ve varış seçimi, otopilot</li>
-<li>Kariyer, görevler, günün uçuşu, iniş puanı ve başarımlar</li>
-<li>Galata Kulesi, Sultanahmet, 15 Temmuz Şehitler ve 1915 Çanakkale köprüleri gibi simge yapılar</li>
-<li>Türkçe, İngilizce, Almanca, İspanyolca ve Fransızca</li>
-</ul>
-<p class="dim">Flight Sim 27 is a flight simulator over the real world: 26 aircraft and helicopters, real airports, career and missions, famous landmarks. iPhone, iPad and Android.</p>
+<div class="topbar">
+  <a class="brand" href="index.html"><img src="icon.png" alt=""><span>FLIGHT SIM <b>27</b></span></a>
+  <div class="links">
+    <a href="#ozellikler"><span class="tr">Özellikler</span><span class="en">Features</span></a>
+    <a href="#destek"><span class="tr">Destek</span><span class="en">Support</span></a>
+    <a href="privacy.html"><span class="tr">Gizlilik</span><span class="en">Privacy</span></a>
+    <button class="langbtn" type="button" aria-label="Dil / Language"><span class="tr">EN</span><span class="en">TR</span></button>
+  </div>
+</div>
+
+<header class="hero">
+  <img class="hero-bg" src="img/bosphorus.jpg" alt="">
+  <div class="hero-in">
+    <h1>FLIGHT SIM <b>27</b></h1>
+    <p class="tag"><span class="tr">Gökyüzü senin. Dünya seni bekliyor.</span><span class="en">The sky is yours. The world is waiting.</span></p>
+    <p class="lead"><span class="tr">Gerçek uydu görüntüsü ve gerçek arazi üzerinde uç. İstanbul Boğazı'ndan Kapadokya'ya, evinin üstünden dünyanın öbür ucuna.</span><span class="en">Fly over real satellite imagery and real terrain. From the Bosphorus to Cappadocia, from your own street to the other side of the world.</span></p>
+    <div class="badges">
+      <span class="badge"><small><span class="tr">Yakında</span><span class="en">Coming soon to the</span></small>App Store</span>
+      <span class="badge"><small><span class="tr">Yakında</span><span class="en">Coming soon on</span></small>Google Play</span>
+    </div>
+  </div>
+</header>
+
+<section class="stats">
+  <div><b>26</b><span class="tr">uçak ve helikopter</span><span class="en">aircraft &amp; helicopters</span></div>
+  <div><b>18</b><span class="tr">ülke</span><span class="en">countries</span></div>
+  <div><b>64</b><span class="tr">keşif noktası</span><span class="en">landmarks to discover</span></div>
+  <div><b>5</b><span class="tr">dil</span><span class="en">languages</span></div>
 </section>
 
-<section class="card">
-<h2>Destek</h2>
-<p>Bir sorun mu var, bir fikrin mi? <a href="https://github.com/denizclaude/flight-sim-27-site/issues">Bize buradan yaz</a>, en kısa sürede dönelim.</p>
-<h2>Sık sorulanlar</h2>
-<p><b>Gerçek dünya yüklenmiyor.</b> Gerçek dünya için internet gerekir. Bağlantın yavaşsa "Tekrar dene"ye bas ya da internetsiz çalışan Elara Adaları'nda uç. Bir bölgeyi önceden indirmek için: Gerçek Dünya → yer seç → Bu bölgeyi indir.</p>
-<p><b>Satın aldıklarım görünmüyor.</b> Mağaza → Satın alımları geri yükle.</p>
-<p><b>Pro Üyeliği nasıl iptal ederim?</b> iPhone/iPad'de Ayarlar → adın → Abonelikler; Android'de Google Play → Ödemeler ve abonelikler. Üyelik, ödenen dönemin sonuna kadar sürer.</p>
-<p><b>Oyun yavaş.</b> Ayarlar → Grafik kalitesini bir kademe düşür ya da Pil tasarrufunu aç.</p>
+<section id="ozellikler" class="wrap">
+  <h2><span class="tr">Neler var?</span><span class="en">What's inside</span></h2>
+  <div class="grid">
+    <article><div class="ic">🌍</div><h3><span class="tr">Gerçek dünya</span><span class="en">The real world</span></h3>
+      <p><span class="tr">Haritadan istediğin yeri seç ya da bulunduğun yerden kalk. Bir bölgeyi indirip internetsiz de uçabilirsin.</span><span class="en">Pick any place on the map, or take off from where you are. Download a region and fly offline too.</span></p></article>
+    <article><div class="ic">✈️</div><h3><span class="tr">26 uçak ve helikopter</span><span class="en">26 aircraft &amp; helicopters</span></h3>
+      <p><span class="tr">Cessna'dan 747'ye, Spitfire'dan F-22'ye, Robinson'dan Chinook'a; her biri kendi uçuş hissiyle.</span><span class="en">From a Cessna to a 747, a Spitfire to an F-22, a Robinson to a Chinook, each with its own feel.</span></p></article>
+    <article><div class="ic">🛬</div><h3><span class="tr">Gerçek havalimanları</span><span class="en">Real airports</span></h3>
+      <p><span class="tr">İşaretli pistler, kalkış ve varış seçimi, otopilot, sesli ATC. Her inişe 100 üzerinden puan ve tekrar izleme.</span><span class="en">Marked runways, departure and arrival, autopilot, voice ATC. Every landing gets a score out of 100 and a replay.</span></p></article>
+    <article><div class="ic">🎯</div><h3><span class="tr">Kariyer ve görevler</span><span class="en">Career &amp; missions</span></h3>
+      <p><span class="tr">Öğrenci pilottan kaptana kariyer, kredi kazandıran işler, günün uçuşu, haftalık etkinlikler ve 29 başarım.</span><span class="en">A career from student pilot to captain, paid jobs, a daily flight, weekly events and 29 achievements.</span></p></article>
+    <article><div class="ic">⛅</div><h3><span class="tr">Hava ve mevsimler</span><span class="en">Weather &amp; seasons</span></h3>
+      <p><span class="tr">Canlı hava, gün doğumu ve batımı, fırtına, kar; mevsime göre değişen ağaçlar.</span><span class="en">Live weather, sunrise and sunset, storms, snow, and trees that change with the season.</span></p></article>
+    <article><div class="ic">📷</div><h3><span class="tr">Fotoğraf modu</span><span class="en">Photo mode</span></h3>
+      <p><span class="tr">Zamanı durdur, kamerayı serbest bırak, filtre seç; en güzel anını kaydet.</span><span class="en">Freeze time, free the camera, pick a filter and save your best moment.</span></p></article>
+  </div>
 </section>
 
-<section class="card" lang="en">
-<h2>Support</h2>
-<p>Something wrong, or an idea? <a href="https://github.com/denizclaude/flight-sim-27-site/issues">Write to us here</a> and we'll get back to you.</p>
-<h2>Frequently asked</h2>
-<p><b>The real world won't load.</b> The real world needs internet. On a slow connection press "Try again", or fly the Elara Islands, which work offline. To download a region beforehand: Real World → pick a place → Download this region.</p>
-<p><b>My purchases are missing.</b> Shop → Restore purchases.</p>
-<p><b>How do I cancel Pro Membership?</b> On iPhone/iPad: Settings → your name → Subscriptions; on Android: Google Play → Payments &amp; subscriptions. It stays active until the end of the paid period.</p>
-<p><b>The game is slow.</b> Settings → lower the graphics quality one step, or turn on Battery saver.</p>
+<section class="wrap gallery">
+  <h2><span class="tr">Oyundan kareler</span><span class="en">Screenshots</span></h2>
+  <div class="shots">
+    <figure class="wide"><img src="img/balloons.jpg" alt="" loading="lazy"><figcaption><span class="tr">Kapadokya'da balonların arasında gün doğumu</span><span class="en">Sunrise among the balloons over Cappadocia</span></figcaption></figure>
+    <figure><img src="img/fighter.jpg" alt="" loading="lazy"><figcaption><span class="tr">Savaş jetiyle alçak ve hızlı</span><span class="en">Low and fast in a fighter jet</span></figcaption></figure>
+    <figure><img src="img/cockpit.jpg" alt="" loading="lazy"><figcaption><span class="tr">Çalışan göstergeleriyle kokpit</span><span class="en">A cockpit with working instruments</span></figcaption></figure>
+    <figure><img src="img/landing.jpg" alt="" loading="lazy"><figcaption><span class="tr">Puanlı iniş ve tekrar</span><span class="en">Scored landings with replay</span></figcaption></figure>
+    <figure><img src="img/route.jpg" alt="" loading="lazy"><figcaption><span class="tr">Haritada kalkış ve varış rotası</span><span class="en">Departure and arrival on the map</span></figcaption></figure>
+  </div>
 </section>
-</main>
+
+<section id="destek" class="wrap">
+  <h2><span class="tr">Destek</span><span class="en">Support</span></h2>
+  <p class="tr">Bir sorun mu var, bir fikrin mi? <a href="https://github.com/denizclaude/flight-sim-27-site/issues">Bize buradan yaz</a>, en kısa sürede dönelim.</p>
+  <p class="en">Something wrong, or an idea? <a href="https://github.com/denizclaude/flight-sim-27-site/issues">Write to us here</a> and we'll get back to you.</p>
+  <div class="faq">
+    <details><summary><span class="tr">Gerçek dünya yüklenmiyor.</span><span class="en">The real world won't load.</span></summary>
+      <p class="tr">Gerçek dünya için internet gerekir. Bağlantın yavaşsa "Tekrar dene"ye bas ya da internetsiz çalışan Elara Adaları'nda uç. Bir bölgeyi önceden indirmek için: Gerçek Dünya → yer seç → Bu bölgeyi indir.</p>
+      <p class="en">The real world needs internet. On a slow connection press "Try again", or fly the Elara Islands, which work offline. To download a region beforehand: Real World → pick a place → Download this region.</p></details>
+    <details><summary><span class="tr">Satın aldıklarım görünmüyor.</span><span class="en">My purchases are missing.</span></summary>
+      <p class="tr">Mağaza → Satın alımları geri yükle.</p>
+      <p class="en">Shop → Restore purchases.</p></details>
+    <details><summary><span class="tr">Pro Üyeliği nasıl iptal ederim?</span><span class="en">How do I cancel Pro Membership?</span></summary>
+      <p class="tr">iPhone/iPad'de Ayarlar → adın → Abonelikler; Android'de Google Play → Ödemeler ve abonelikler. Üyelik, ödenen dönemin sonuna kadar sürer.</p>
+      <p class="en">On iPhone/iPad: Settings → your name → Subscriptions; on Android: Google Play → Payments &amp; subscriptions. It stays active until the end of the paid period.</p></details>
+    <details><summary><span class="tr">Oyun yavaş.</span><span class="en">The game is slow.</span></summary>
+      <p class="tr">Ayarlar → Grafik kalitesini bir kademe düşür ya da Pil tasarrufunu aç.</p>
+      <p class="en">Settings → lower the graphics quality one step, or turn on Battery saver.</p></details>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>© 2026 FS27 Studio</span>
+  <a href="privacy.html"><span class="tr">Gizlilik politikası</span><span class="en">Privacy policy</span></a>
+  <span class="dim"><span class="tr">Uçak adları yalnızca tanıtım içindir; üreticilerle bağlantımız yoktur.</span><span class="en">Aircraft names are used descriptively; we are not affiliated with their makers.</span></span>
+</footer>
+
+<script>
+  document.querySelector(".langbtn").addEventListener("click", function () {
+    var l = document.documentElement.getAttribute("data-lang") === "tr" ? "en" : "tr";
+    document.documentElement.setAttribute("data-lang", l);
+    document.documentElement.lang = l;
+    try { localStorage.setItem("fs27lang", l); } catch (e) {}
+  });
+</script>
 </body>
 </html>
